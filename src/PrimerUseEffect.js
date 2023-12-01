@@ -6,7 +6,7 @@ const PrimerUseEffect = () => {
     // controlled компонента-компонент зн-е кот контролируеся заданным состоянием(state)
     const [inputValue, setInputValue] = useState(''); 
   
-    // useEffect для componentDidMount
+    // useEffect для componentDidMount     // useEffect для componentWillUnmount
     useEffect(() => {
       console.log('Компонент отмонтирован');
       return () => {
@@ -19,7 +19,7 @@ const PrimerUseEffect = () => {
       console.log('Значение input обновлено:', inputValue);
     }, [inputValue]);
   
-    // useEffect для componentWillUnmount
+
     useEffect(() => {
       return () => {
         console.log('Компонент обновлен');
